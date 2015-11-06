@@ -18,6 +18,7 @@ public class Main {
         }
         List<String[]> edges = parseCSV(dataSourceFile,";");
 
+
         System.out.println("Matrix graph");
         Graph matrixGraph = new MatrixGraph(34);
         for(String[] edge:edges){
