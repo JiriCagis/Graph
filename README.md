@@ -6,3 +6,9 @@ Specifically, the adjacency matrix of a finite graph G on n vertices is the n ×
 
 <h3> Adjacenty list </h3>
 In graph theory and computer science, an adjacency list representation of a graph is a collection of unordered lists, one for each vertex in the graph. Each list describes the set of neighbors of its vertex.
+
+<h3> Function </h3>
+- Calculate min degree vertex
+- Calculate max degree vertex
+- Calculate average degree vertex
+- Show frequency degree
