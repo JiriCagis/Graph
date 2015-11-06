@@ -12,3 +12,7 @@ In graph theory and computer science, an adjacency list representation of a grap
 - Calculate max degree vertex
 - Calculate average degree vertex
 - Show frequency degree
+
+<h3> Helpful function </h3>
+- Implement downloader for get data source
+- Implement csv parser for data source
