@@ -33,6 +33,8 @@ public class Main {
         System.out.println("Min vertex degree: "+matrixGraph.calculateMinDegreeVertex());
         System.out.println("Max vertex degree: "+matrixGraph.calculateMaxDegreeVertex());
         System.out.println("Average vertex degree: "+matrixGraph.calculateAverageDegreeVertex());
+        System.out.println("Frequency degree");
+        matrixGraph.showFrequencyDegree();
 
         System.out.println("\nList graph");
         Graph listGraph = new ListGraph();
@@ -49,7 +51,8 @@ public class Main {
         System.out.println("Min vertex degree: "+listGraph.calculateMinDegreeVertex());
         System.out.println("Max vertex degree: "+listGraph.calculateMaxDegreeVertex());
         System.out.println("Average vertex degree: "+listGraph.calculateAverageDegreeVertex());
-
+        System.out.println("Frequency degree");
+        listGraph.showFrequencyDegree();
 
     }
 

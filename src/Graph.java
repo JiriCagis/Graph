@@ -19,4 +19,6 @@ public interface Graph {
     int calculateMaxDegreeVertex();
 
     float calculateAverageDegreeVertex();
+
+    void showFrequencyDegree();
 }

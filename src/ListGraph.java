@@ -55,6 +55,25 @@ public class ListGraph implements Graph{
         }
         return totalSum/(float) neighbors.size();
     }
+
+    @Override
+    public void showFrequencyDegree() {
+        int minDegree = calculateMinDegreeVertex();
+        int maxDegree = calculateMaxDegreeVertex();
+
+        for(int degree = minDegree;degree<=maxDegree;degree++){
+            int countForDegree = 0;
+
+            for(Integer key:neighbors.keySet()){
+                Set<Integer> set = neighbors.get(key);
+                if(set!=null && set.size()==degree){
+                    countForDegree++;
+                }
+            }
+
+            System.out.println(degree + ":" + countForDegree);
+        }
+    }
 }
 
 
