@@ -12,6 +12,8 @@ In graph theory and computer science, an adjacency list representation of a grap
 - Calculate max degree vertex
 - Calculate average degree vertex
 - Show frequency degree
+- Calculate shortes distance between each node (using floyd algorith)
+- Calculate closeness centrality
 
 <h3> Helpful function </h3>
 - Implement downloader for get data source
