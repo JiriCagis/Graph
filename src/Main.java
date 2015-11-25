@@ -30,29 +30,24 @@ public class Main {
             matrixGraph.addEdge(vertex2,vertex1);
         }
 
+
+
         System.out.println("Min vertex degree: "+matrixGraph.calculateMinDegreeVertex());
         System.out.println("Max vertex degree: "+matrixGraph.calculateMaxDegreeVertex());
         System.out.println("Average vertex degree: "+matrixGraph.calculateAverageDegreeVertex());
+        System.out.println("Mean distance");
         System.out.println("Frequency degree");
         matrixGraph.showFrequencyDegree();
 
-        System.out.println("\nList graph");
-        Graph listGraph = new ListGraph();
-
-        for(String[] edge:edges){
-            int vertex1 = Integer.parseInt(edge[0]);
-            int vertex2 = Integer.parseInt(edge[1]);
-            vertex1-=1;
-            vertex2-=1;
-            listGraph.addEdge(vertex1,vertex2);
-            listGraph.addEdge(vertex2,vertex1);
+        System.out.println("Closeness centrality");
+        double[] array = matrixGraph.calculateMeanDistance();
+        for(int i=0;i<array.length;i++){
+            System.out.println((i+1) + " - " + array[i]);
         }
 
-        System.out.println("Min vertex degree: "+listGraph.calculateMinDegreeVertex());
-        System.out.println("Max vertex degree: "+listGraph.calculateMaxDegreeVertex());
-        System.out.println("Average vertex degree: "+listGraph.calculateAverageDegreeVertex());
-        System.out.println("Frequency degree");
-        listGraph.showFrequencyDegree();
+        matrixGraph.calculateFloydAlgorithm();
+        System.out.print(matrixGraph);
+
 
     }
 

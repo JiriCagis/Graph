@@ -23,6 +23,11 @@ public class ListGraph implements Graph{
         }
     }
 
+    @Override
+    public void addEdge(int vertex1, int vertex2, int evaluate) {
+        //not supported now
+    }
+
     public int calculateMinDegreeVertex() {
         int min = Integer.MAX_VALUE;
         for(Integer key:neighbors.keySet()){
@@ -74,6 +79,23 @@ public class ListGraph implements Graph{
             System.out.println(degree + ":" + countForDegree);
         }
     }
+
+    @Override
+    public void calculateFloydAlgorithm() {
+
+    }
+
+    @Override
+    public double[] calculateMeanDistance() {
+        return new double[0];
+    }
+
+    @Override
+    public double[] closenessCentrality() {
+        return new double[0];
+    }
+
+
 }
 
 

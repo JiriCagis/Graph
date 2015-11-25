@@ -14,6 +14,8 @@ public interface Graph {
 
     void addEdge(int vertex1, int vertex2);
 
+    void addEdge(int vertex1, int vertex2, int evaluate);
+
     int calculateMinDegreeVertex();
 
     int calculateMaxDegreeVertex();
@@ -21,4 +23,11 @@ public interface Graph {
     float calculateAverageDegreeVertex();
 
     void showFrequencyDegree();
+
+    void calculateFloydAlgorithm();
+
+    double[] calculateMeanDistance();
+
+    double[] closenessCentrality();
+
 }
