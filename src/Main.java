@@ -40,7 +40,7 @@ public class Main {
         matrixGraph.showFrequencyDegree();
 
         System.out.println("Closeness centrality");
-        double[] array = matrixGraph.calculateMeanDistance();
+        double[] array = matrixGraph.closenessCentrality();
         for(int i=0;i<array.length;i++){
             System.out.println((i+1) + " - " + array[i]);
         }
